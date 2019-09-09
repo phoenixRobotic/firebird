@@ -1,4 +1,9 @@
-## Welcome to GitHub Pages
+## Welcome to PalmTree
+There is no particular meaning to the name PalmTree. 
+
+The Github Pages page for PalmTree can be found at https://phoenixrobotic.github.io/palmtree/
+
+The PalmTree repository will house all code pertaining the Glendale Community College Phoenix Team's Humanoid Receptionist Interface. The first implementation of this, EVA, can be found at ______ (add later).
 
 You can use the [editor on GitHub](https://github.com/phoenixRobotic/firebird/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
