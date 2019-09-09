@@ -5,6 +5,17 @@ The Github Pages page for PalmTree can be found at https://phoenixrobotic.github
 
 The PalmTree repository will house all code pertaining the Glendale Community College Phoenix Team's Humanoid Receptionist Interface. The first implementation of this, EVA, can be found at ______ (add later).
 
+## To Do List
+- instructions for Plato Research Dialogue System
+- information for Tacotron-2 (also CUDA Compute v3.5 notes)
+- obtain database for GCC faculty and make csv (license?) to provide to Plato
+- investigate implementing docker for automating testing
+- rewrite software block diagram
+- obtain hardware block diagram
+- update inventory list
+
+
+
 You can use the [editor on GitHub](https://github.com/phoenixRobotic/firebird/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
