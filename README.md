@@ -5,7 +5,9 @@ There is no particular meaning to the name PalmTree.
 
 ## Phoenix Team Social Media
 Twitter: https://twitter.com/phoenixrobotics
+
 Instagram:
+
 Youtube:
 
 
@@ -44,16 +46,21 @@ For the sake of convenience, the installation process of Plato has been abbrevia
     ````
 4. Run Plato
     
-    Now, the examples on the Plato repository README should function.
+    Now, the examples on the Plato repository README should function. Keep in mind that the samples should be run using Python 3, not Python 2.
 
 ## Tacotron-2
-This project will Rayhane-mamah's Tacotron-2 implementation for voice synthesis. The repository can be found [HERE](https://github.com/Rayhane-mamah/Tacotron-2).
+This project will use Rayhane-mamah's Tacotron-2 implementation for voice synthesis. The repository can be found [HERE](https://github.com/Rayhane-mamah/Tacotron-2).
 
 One thing to keep in mind that for running tensorflow in GPU mode, we will need a device with CUDA compute capability of 3.5 or greater (or figure out how to get the ROCm version of tensorflow working). In practice, this refers to the GK110 GPU (e.g. GTX 780, Tesla K20, etc) and above. 
 
 ## To Do List
-- obtain database for GCC faculty and make csv to provide to Plato
-- investigate implementing docker for automating testing
-- rewrite software block diagram
-- obtain hardware block diagram
-- update inventory list
+- Produce GCC Faculty Information CSV for Plato.
+- Update software block diagram.
+- Update hardware block diagram.
+- Document and Publish mods to InMoov parts.
+- 
+
+## Note Regarding Licenses
+- Plato Research Dialogue System: See Repo.
+- Tacotron-2: MIT
+- InMoov: CC BY-NC 3.0
