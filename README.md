@@ -13,8 +13,7 @@ Youtube: TBA
 
 
 ## Plato Research Dialogue System
-This project utilizes the uber-research's Plato Research Dialogue System. The repository can be found [HERE](https://github.com/uber-research/plato-research-dialogue-system).
-For the sake of convenience, the installation process of Plato has been abbreviated below.
+This project utilizes the uber-research's Plato Research Dialogue System for conversation AI. The repository can be found [HERE](https://github.com/uber-research/plato-research-dialogue-system). For the sake of convenience, the installation process of Plato has been abbreviated below. A video demonstrating the installation of Plato will be made available soon.
 
 ### Installation
 1. Clone the Plato Research Dialogue System Repository
