@@ -1,4 +1,4 @@
-## Welcome to PalmTree
+# Welcome to PalmTree
 The PalmTree repository will house all code pertaining the Glendale Community College Phoenix Team's Humanoid Receptionist Interface. The Github Pages website for PalmTree can be found at https://phoenixrobotic.github.io/palmtree/
 
 There is no particular meaning to the name PalmTree. 
@@ -42,54 +42,11 @@ For the sake of convenience, the installation process of Plato has been abbrevia
 ## Tacotron-2
 This project will Rayhane-mamah's Tacotron-2 implementation for voice synthesis. The repository can be found [HERE](https://github.com/Rayhane-mamah/Tacotron-2).
 
-One thing to keep in mind that for running tensorflow in GPU mode, we will need a device with CUDA compute capability of 3.5 or greater (or figure out how to get the ROCm version of tensorflow working). 
-
-
- 
+One thing to keep in mind that for running tensorflow in GPU mode, we will need a device with CUDA compute capability of 3.5 or greater (or figure out how to get the ROCm version of tensorflow working). In practice, this refers to the GK110 GPU (e.g. GTX 780, Tesla K20, etc) and above. 
 
 ## To Do List
-- instructions for Plato Research Dialogue System
-- information for Tacotron-2 (also CUDA Compute v3.5 notes)
-- obtain database for GCC faculty and make csv (license?) to provide to Plato
+- obtain database for GCC faculty and make csv to provide to Plato
 - investigate implementing docker for automating testing
 - rewrite software block diagram
 - obtain hardware block diagram
 - update inventory list
-
-
-
-You can use the [editor on GitHub](https://github.com/phoenixRobotic/firebird/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/phoenixRobotic/firebird/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
