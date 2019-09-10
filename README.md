@@ -3,6 +3,13 @@ The PalmTree repository will house all code pertaining the Glendale Community Co
 
 There is no particular meaning to the name PalmTree. 
 
+## Phoenix Team Social Media
+Twitter: https://twitter.com/phoenixrobotics
+Instagram:
+Youtube:
+
+
+
 ## Plato Research Dialogue System
 This project utilizes the uber-research's Plato Research Dialogue System. The repository can be found [HERE](https://github.com/uber-research/plato-research-dialogue-system).
 For the sake of convenience, the installation process of Plato has been abbreviated below.
