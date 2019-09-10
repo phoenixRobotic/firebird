@@ -6,7 +6,7 @@ There is no particular meaning to the name PalmTree.
 ## Phoenix Team Social Media
 Twitter: https://twitter.com/phoenixrobotics
 
-Instagram: TBA
+Instagram: https://www.instagram.com/phoenixrobotic/?hl=en
 
 Youtube: TBA
 
