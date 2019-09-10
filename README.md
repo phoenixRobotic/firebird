@@ -54,10 +54,7 @@ This project will use Rayhane-mamah's Tacotron-2 implementation for voice synthe
 One thing to keep in mind that for running tensorflow in GPU mode, we will need a device with CUDA compute capability of 3.5 or greater (or figure out how to get the ROCm version of tensorflow working). In practice, this refers to the GK110 GPU (e.g. GTX 780, Tesla K20, etc) and above. 
 
 ## To Do List
-- Produce GCC Faculty Information CSV for Plato.
-- Update software block diagram.
-- Update hardware block diagram.
-- Document and Publish mods to InMoov parts.
+- See Projects tab [HERE](https://github.com/phoenixRobotic/palmtree/projects)
 
 ## Note Regarding Licenses
 - Plato Research Dialogue System: See Repo.
