@@ -6,9 +6,9 @@ There is no particular meaning to the name PalmTree.
 ## Phoenix Team Social Media
 Twitter: https://twitter.com/phoenixrobotics
 
-Instagram:
+Instagram: TBA
 
-Youtube:
+Youtube: TBA
 
 
 
@@ -58,7 +58,6 @@ One thing to keep in mind that for running tensorflow in GPU mode, we will need 
 - Update software block diagram.
 - Update hardware block diagram.
 - Document and Publish mods to InMoov parts.
-- 
 
 ## Note Regarding Licenses
 - Plato Research Dialogue System: See Repo.
