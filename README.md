@@ -10,7 +10,8 @@ Instagram: https://www.instagram.com/phoenixrobotic/?hl=en
 
 Youtube: TBA
 
-
+## Operating System
+Instructions on this repository assume that you are using a fresh Ubuntu 18.04 LTS as your operating system. That being said, the dependencies shouldn't be platform specific.
 
 ## Plato Research Dialogue System
 This project utilizes the uber-research's Plato Research Dialogue System for conversation AI. The repository can be found [HERE](https://github.com/uber-research/plato-research-dialogue-system). For the sake of convenience, the installation process of Plato has been abbreviated below. A video demonstrating the installation of Plato will be made available soon.
