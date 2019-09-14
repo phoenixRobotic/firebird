@@ -16,6 +16,8 @@ Instructions on this repository assume that you are using a fresh Ubuntu 18.04 L
 ## Plato Research Dialogue System
 This project utilizes the uber-research's Plato Research Dialogue System for conversation AI. The repository can be found [HERE](https://github.com/uber-research/plato-research-dialogue-system). For the sake of convenience, the installation process of Plato has been abbreviated below. A video demonstrating the installation of Plato will be made available soon.
 
+Please clone Plato from the root directory of PalmTree.
+
 ### Installation
 1. Clone the Plato Research Dialogue System Repository
     
@@ -36,6 +38,10 @@ This project utilizes the uber-research's Plato Research Dialogue System for con
     Plato installs gmpy at some point, which will fail on a fresh install. This fix from stackoverflow worked:
     ````
     sudo apt-get install -y libgmp-dev libmpfr-dev libmpc-dev
+    ````
+    To enable speech in Plato, we need to install PyAudio. However, Pyaudio requires portaudio19, which can be installed using the following command:
+    ````
+    sudo apt-get install portaudio19-dev
     ````
 3. Install Plato Requirements
     
