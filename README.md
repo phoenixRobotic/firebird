@@ -20,6 +20,7 @@ Please note that this is tentative. Subject to change. A lot. Really.
 
 ## Hardware Block Diagram
 For lack of a better place to put it, the hardware block diagram will also be placed here. Same clause as the software diagram though.
+
 ![Image of Hardware Block Diagram](https://github.com/phoenixRobotic/palmtree/blob/master/eva_hardware_interface_bd.png)
 
 ## Plato Research Dialogue System
