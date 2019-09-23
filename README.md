@@ -13,10 +13,14 @@ Youtube: TBA
 ## Operating System
 Instructions on this repository assume that you are using a fresh Ubuntu 18.04 LTS as your operating system. That being said, the dependencies shouldn't be platform specific.
 
-## Block Diagram
+## Software Block Diagram
 Please note that this is tentative. Subject to change. A lot. Really.
 
-![Image of Block Diagram](https://github.com/phoenixRobotic/palmtree/blob/master/palmtree_block_diagram_v1.png)
+![Image of Software Block Diagram](https://github.com/phoenixRobotic/palmtree/blob/master/palmtree_block_diagram_v1.png)
+
+## Hardware Block Diagram
+For lack of a better place to put it, the hardware block diagram will also be placed here. Same clause as the software diagram though.
+![Image of Hardware Block Diagram](https://github.com/phoenixRobotic/palmtree/blob/master/eva_hardware_interface_bd.png)
 
 ## Plato Research Dialogue System
 This project utilizes the uber-research's Plato Research Dialogue System for conversation AI. The repository can be found [HERE](https://github.com/uber-research/plato-research-dialogue-system). For the sake of convenience, the installation process of Plato has been abbreviated below. A video demonstrating the installation of Plato will be made available soon.
