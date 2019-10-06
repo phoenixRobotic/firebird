@@ -57,7 +57,7 @@ Please clone Plato from the root directory of PalmTree.
     
     This instruction is the same as what is written on the README of the Plato repository. However, it seems like (by default on a fresh Ubuntu 18.04.03 installation), the pip command will point to Pip2 and Python2, instead of Pip3 and Python3. Therefore, run the following instead:
     ````
-    sudo apt-get install python3-audio
+    sudo apt-get install python3-pyaudio
     pip3 install -r requirements.txt
     ````
 4. Run Plato
