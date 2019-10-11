@@ -10,8 +10,10 @@ Instagram: https://www.instagram.com/phoenixrobotic/?hl=en
 
 Youtube: TBA
 
-## Operating System
-Instructions on this repository assume that you are using a fresh Ubuntu 18.04 LTS as your operating system. That being said, the dependencies shouldn't be platform specific.
+## Development Environment
+Instructions on this repository assume that you are using a fresh Ubuntu 18.04 LTS as your operating system. That being said, there isn't anything really Ubuntu-specific as far as I am aware.
+
+Hardware-wise, we assume you also have an NVIDIA GPU with CUDA Compute Capability of 3.5 or greater, in order to take advantage of GPU-accelerated Tensorflow. Development is currently done using a P106-090 and Tesla K20 graphics card, using driver version 430. 
 
 ## Software Block Diagram
 Please note that this is tentative. Subject to change. A lot. Really.
@@ -67,7 +69,67 @@ Please clone Plato from the root directory of PalmTree.
 ## Tacotron-2
 This project will use Rayhane-mamah's Tacotron-2 implementation for voice synthesis. The repository can be found [HERE](https://github.com/Rayhane-mamah/Tacotron-2).
 
-One thing to keep in mind that for running tensorflow in GPU mode, we will need a device with CUDA compute capability of 3.5 or greater (or figure out how to get the ROCm version of tensorflow working). In practice, this refers to the GK110 GPU (e.g. GTX 780, Tesla K20, etc) and above. 
+Please clone Tacotron-2 to the root directory of PalmTree.
+
+### Installation
+1. Prepare Tensorflow
+
+    For the record, almost all of these instructions have been taken from the Install Tensorflow page of tensorflow.org, so if you need more/better info, refer back to that. 
+    
+    Tacotron-2 requires very few dependencies, but one of these is Tensorflow. We will be installing Tensorflow in a virtual environment using Virtualenv. First, run the following in the terminal to obtain the necessary packages to install Tensorflow:
+    ````
+    sudo apt install python3-dev python3-pip
+    sudo pip3 install -U virtualenv
+    ````
+    Next, execute the following command, which will create a new virtual environment (here named "taco14"):
+    ````
+    virtualenv --system-site-packages -p python3 ./taco14
+    ````
+    Then, begin using the taco14 virtual environment using the following command:
+    ````
+    source ./taco14/bin/activate
+    ````
+    The prefix (taco14) should now appear before the name of your system in the terminal.
+    Update the virtual environment's pip using:
+    ````
+    pip install --upgrade pip
+    ````
+    Now that we have the virtual environment working and pip is updated, we will use pip to install tensorflow. We obtain the GPU compatible version of Tensorflow version 1.14 (as opposed to 1.15 or 2.0.0) using the following command:
+    ````
+    pip install --upgrade tensorflow-gpu==1.14
+    ````
+    Sometimes you might need to run the command twice, but it should install without errors on the second try. Something about numpy being outdated I believe?
+
+2. Install CUDA 10
+    This is getting tedious.
+    Run this to fix some environmental variable stuff:
+    ````
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64
+    ````
+    Then run all of this, which should get you CUDA 10 installed.
+    ````
+    wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-repo-ubuntu1804_10.0.130-1_amd64.deb
+    sudo dpkg -i cuda-repo-ubuntu1804_10.0.130-1_amd64.deb
+    sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub
+    sudo apt-get update
+    wget http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64/nvidia-machine-learning-repo-ubuntu1804_1.0.0-1_amd64.deb
+    sudo apt install ./nvidia-machine-learning-repo-ubuntu1804_1.0.0-1_amd64.deb
+    sudo apt-get update
+
+    sudo apt-get install --no-install-recommends \
+        cuda-10-0 \
+        libcudnn7=7.6.2.24-1+cuda10.0  \
+        libcudnn7-dev=7.6.2.24-1+cuda10.0
+
+    sudo apt-get install -y --no-install-recommends libnvinfer5=5.1.5-1+cuda10.0 \
+        libnvinfer-dev=5.1.5-1+cuda10.0
+    ````
+    Congrats. You have CUDA 10 now.
+
+3. Install Tacotron-2
+    
+    Just git clone it and follow the instructions on the readme.
+    Note: set batch sizes to 4 to get it to fit on the P106-090. Otherwise default settings worked.
 
 ## To Do List
 - See Projects tab [HERE](https://github.com/phoenixRobotic/palmtree/projects)
