@@ -130,6 +130,7 @@ Please clone Tacotron-2 to the root directory of PalmTree.
     
     Just git clone it and follow the instructions on the readme.
     Note: set batch sizes to 4 to get it to fit on the P106-090. Otherwise default settings worked. (On the other hand, a batch size of 4 seems to be too small to get convergence).
+    Note: Due to checkpoint loading error, perform wavenet inference on Tensorflow 1.10.
 
 ## To Do List
 - See Projects tab [HERE](https://github.com/phoenixRobotic/palmtree/projects)
